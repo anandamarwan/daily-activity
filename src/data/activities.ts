@@ -3,6 +3,7 @@ export type Activity = {
   title: string;
   description: string;
   date: Date;
+  isMust: boolean;
 };
 
 export const activities: Activity[] = [
@@ -11,17 +12,20 @@ export const activities: Activity[] = [
     title: "breakfast",
     description: "breakfast with bread",
     date: new Date(),
+    isMust: true,
   },
   {
     id: 2,
     title: "take shower",
     description: "take shower in bathroom",
     date: new Date(),
+    isMust: true,
   },
   {
     id: 3,
     title: "go study",
     description: "go study in bedroom",
     date: new Date(),
+    isMust: false,
   },
 ];

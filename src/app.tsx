@@ -14,16 +14,16 @@ export function App() {
           <h2 className="text-2xl">My Daily Activity</h2>
 
           <div>
-            <ul className="space-y-1">
+            <ul className="flex flex-col divide-y-4 divide-solid">
               {activities.map((activity) => {
                 return (
                   <li key={activity.id}>
                     <ActivityItem activity={activity} />
-                    <p>{activity.description}</p>
+                    {/* <p>{activity.description}</p>
                     <p>
                       {activity.date.getDate()}-{activity.date.getMonth()}-
                       {activity.date.getFullYear()}
-                    </p>
+                    </p> */}
                   </li>
                 );
               })}
