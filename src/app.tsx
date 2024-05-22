@@ -4,20 +4,32 @@ export function App() {
   // console.log(activities);
 
   return (
-    <div>
-      <h1 className="text-4xl font-bold">Daily Activity</h1>
-      {activities.map((activity) => {
-        return (
+    <div className="m-10 flex justify-center">
+      <main className="w-full max-w-3x1 space-y-4">
+        <h1 className="text-4xl font-bold">My Activity</h1>
+        <hr />
+
+        <section>
+          <h2 className="text-2xl">My Daily Activity</h2>
+
           <div>
-            <h2>{activity.title}</h2>
-            <p>{activity.description}</p>
-            <p>
-              {activity.date.getDate()}-{activity.date.getMonth()}-
-              {activity.date.getFullYear()}
-            </p>
+            <ul>
+              {activities.map((activity) => {
+                return (
+                  <li className="space-y-1">
+                    <p>{activity.title}</p>
+                    <p>{activity.description}</p>
+                    <p>
+                      {activity.date.getDate()}-{activity.date.getMonth()}-
+                      {activity.date.getFullYear()}
+                    </p>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
-        );
-      })}
+        </section>
+      </main>
     </div>
   );
 }
