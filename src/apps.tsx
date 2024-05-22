@@ -5,7 +5,7 @@ export function App() {
 
   return (
     <div>
-      <h1 className="text-4xl">Daily Activity</h1>
+      <h1 className="text-4xl font-bold">Daily Activity</h1>
       {activities.map((activity) => {
         return (
           <div>
