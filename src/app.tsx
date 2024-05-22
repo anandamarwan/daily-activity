@@ -1,3 +1,4 @@
+import { ActivityItem } from "./components/ui/activity-item";
 import { activities } from "./data/activities";
 
 export function App() {
@@ -13,11 +14,11 @@ export function App() {
           <h2 className="text-2xl">My Daily Activity</h2>
 
           <div>
-            <ul>
+            <ul className="space-y-1">
               {activities.map((activity) => {
                 return (
-                  <li className="space-y-1">
-                    <p>{activity.title}</p>
+                  <li key={activity.id}>
+                    <ActivityItem activity={activity} />
                     <p>{activity.description}</p>
                     <p>
                       {activity.date.getDate()}-{activity.date.getMonth()}-
