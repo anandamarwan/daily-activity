@@ -17,6 +17,7 @@ export function ActivityItem({ activity }: { activity: Activity }) {
             <time dateTime={timeEnd}>{timeEnd}</time>
           </p>
         )}
+        <p className="text-slate-600">{activity.category}</p>
       </div>
 
       <div className="flex gap-2">
