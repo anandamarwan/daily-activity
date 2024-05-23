@@ -7,11 +7,13 @@ export function App() {
   return (
     <div className="m-10 flex justify-center">
       <main className="w-full max-w-3x1 space-y-4">
-        <h1 className="text-4xl font-bold">My Activity</h1>
+        <h1 className="text-4xl font-bold text-center text-blue-600">
+          My Activitity
+        </h1>
         <hr />
 
         <section>
-          <h2 className="text-2xl">My Daily Activity</h2>
+          <h2 className="text-2xl font-bold">Today</h2>
 
           <div>
             <ul className="flex flex-col divide-y-4 divide-solid">
