@@ -55,6 +55,7 @@ export const activities: Activity[] = [
   {
     id: 6,
     title: "Lunch",
+    category: "#Food 🍲",
     description: "lunch with Rendang from Padang Bahagia",
     isMust: true,
     timeStart: new Date("2024-05-23 12:30"),
@@ -89,6 +90,7 @@ export const activities: Activity[] = [
   {
     id: 10,
     title: "Dinner",
+    category: "#Food 🍲",
     description: "dinner with fried chicken from Dapur Rai Raka",
     isMust: false,
     timeStart: new Date("2024-05-23 18:00"),
