@@ -29,7 +29,7 @@ export const activities: Activity[] = [
   },
   {
     id: 3,
-    title: "take shower",
+    title: "Take Shower",
     description: "take shower in bathroom",
     isMust: false,
     timeStart: new Date("2024-05-23 07:00"),
@@ -37,7 +37,7 @@ export const activities: Activity[] = [
   },
   {
     id: 4,
-    title: "go study",
+    title: "Go Study",
     description: "go study in bedroom",
     isMust: true,
     timeStart: new Date("2024-05-23 08:00"),
@@ -54,7 +54,7 @@ export const activities: Activity[] = [
   },
   {
     id: 6,
-    title: "lunch",
+    title: "Lunch",
     description: "lunch with Rendang from Padang Bahagia",
     isMust: true,
     timeStart: new Date("2024-05-23 12:30"),
@@ -62,7 +62,7 @@ export const activities: Activity[] = [
   },
   {
     id: 7,
-    title: "go study",
+    title: "Go Study",
     description: "learn video from Bearmentor",
     isMust: true,
     timeStart: new Date("2024-05-23 13:00"),
@@ -88,7 +88,7 @@ export const activities: Activity[] = [
   },
   {
     id: 10,
-    title: "dinner",
+    title: "Dinner",
     description: "dinner with fried chicken from Dapur Rai Raka",
     isMust: false,
     timeStart: new Date("2024-05-23 18:00"),
