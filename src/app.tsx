@@ -4,7 +4,7 @@ import { dataActivities } from "./data/activities";
 export function App() {
   return (
     <div className="m-10 flex justify-center">
-      <main className="w-full max-w-3x1 space-y-4">
+      <main className="w-full max-w-3xl space-y-4">
         <section>
           <h2 className="text-2xl font-bold">Today</h2>
 
