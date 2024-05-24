@@ -1,9 +1,7 @@
 import { ActivityItem } from "./components/ui/activity-item";
-import { activities } from "./data/activities";
+import { dataActivities } from "./data/activities";
 
 export function App() {
-  // console.log(activities);
-
   return (
     <div className="m-10 flex justify-center">
       <main className="w-full max-w-3x1 space-y-4">
@@ -17,7 +15,7 @@ export function App() {
 
           <div>
             <ul className="flex flex-col divide-y-4 divide-solid">
-              {activities.map((activity) => {
+              {dataActivities.map((activity) => {
                 return (
                   <li key={activity.id}>
                     <ActivityItem activity={activity} />

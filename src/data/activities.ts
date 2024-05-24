@@ -8,7 +8,7 @@ export type Activity = {
   timeEnd?: Date;
 };
 
-export const activities: Activity[] = [
+export const dataActivities: Activity[] = [
   {
     id: 1,
     title: "Jogging",
