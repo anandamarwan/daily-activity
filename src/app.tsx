@@ -19,11 +19,6 @@ export function App() {
                 return (
                   <li key={activity.id}>
                     <ActivityItem activity={activity} />
-                    {/* <p>{activity.description}</p>
-                    <p>
-                      {activity.date.getDate()}-{activity.date.getMonth()}-
-                      {activity.date.getFullYear()}
-                    </p> */}
                   </li>
                 );
               })}

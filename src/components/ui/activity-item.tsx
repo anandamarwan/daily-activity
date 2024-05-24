@@ -7,12 +7,12 @@ export function ActivityItem({ activity }: { activity: Activity }) {
 
   return (
     <div className="flex justify-between p-2">
-      <div className="">
+      <div>
         <p className="text-xl">{activity.title}</p>
         {timeStart && timeEnd && (
           <p className="text-red-600">
-            {" "}
-            ⏰<time dateTime={timeStart}>{timeStart}</time>
+            <span>⏰ </span>
+            <time dateTime={timeStart}>{timeStart}</time>
             <span>-</span>
             <time dateTime={timeEnd}>{timeEnd}</time>
           </p>
@@ -21,7 +21,7 @@ export function ActivityItem({ activity }: { activity: Activity }) {
       </div>
 
       <div className="flex gap-2">
-        {activity.isMust && <p>💪</p>}
+        {activity.isRequired && <p>💪</p>}
         <p className="text-slate-600">{activity.description}</p>
       </div>
     </div>
