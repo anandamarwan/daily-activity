@@ -63,7 +63,7 @@ export const dataActivities: Activity[] = [
   },
   {
     id: 7,
-    title: "Go Study",
+    title: "Go Sleep",
     description: "learn video from Bearmentor",
     isRequired: true,
     timeStart: new Date("2024-05-23 13:00"),

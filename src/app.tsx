@@ -1,18 +1,28 @@
+import { useState } from "react";
 import { ActivityItem } from "./components/ui/activity-item";
-import { dataActivities } from "./data/activities";
+import { Activity, dataActivities } from "./data/activities";
 
 export function App() {
+  const [activities, setActivities] = useState(dataActivities);
+
   const handleSubmit = (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
+
     const activityFormData = new FormData(event.currentTarget);
 
     const newActivity = {
-      // id: newId,
-      title: activityFormData.get("title"),
-      category: activityFormData.get("category"),
+      id: 100,
+      title: String(activityFormData.get("title")),
+      category: String(activityFormData.get("category")),
+      description: "",
+      isRequired: false,
     };
 
-    console.log({ newActivity });
+    const newActivities = [...activities, newActivity];
+
+    setActivities(newActivities);
+
+    console.log({ newActivities });
   };
 
   return (
@@ -22,7 +32,11 @@ export function App() {
           <h2 className="text-2xl font-bold">Today</h2>
 
           <div className="bg-gray-100 p-4 rounded-lg">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+            <form
+              method="post"
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-2"
+            >
               <div className="flex items-center gap-2">
                 <label htmlFor="title">Title: </label>
                 <input
@@ -58,7 +72,7 @@ export function App() {
 
           <div>
             <ul className="flex flex-col divide-y-4 divide-solid">
-              {dataActivities.map((activity) => {
+              {activities.map((activity) => {
                 return (
                   <li key={activity.id}>
                     <ActivityItem activity={activity} />
